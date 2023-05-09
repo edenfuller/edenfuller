@@ -7,9 +7,10 @@ function About() {
       <h2>about / contact</h2>
       <div className="about-content">
         <p>
-          <strong>Eden Fuller</strong> is a front-end web engineer with 8 years'
-          experience. Eden is currently the lead storefront engineer at{" "}
-          <strong>Trove</strong>. She has previously worked at{" "}
+          <strong>Eden Fuller</strong> is a front-end web engineer with 8 years
+          of experience building intuitive, reliable, and pleasing interfaces
+          for millions of users. Eden is currently the lead storefront engineer
+          at <strong>Trove</strong>. She's previously worked at{" "}
           <strong>IKEA</strong>, <strong>AOL</strong>, and{" "}
           <strong>Brinkbit</strong>.
         </p>
