@@ -3,10 +3,8 @@ import washedClean from "./washed_clean.jpg";
 import outboundBlack from "./outbound_black.png";
 function Home() {
   return (
-    <div id="About" className="layout">
+    <section id="About" className="layout">
       <>
-        <h1>Eden Fuller</h1>
-        <h2>portfolio</h2>
         <div className="about-content">
           <p>
             <a target="_blank" href="https://www.onward.on-running.com/">
@@ -73,7 +71,7 @@ function Home() {
           </p>
         </div>
       </>
-    </div>
+    </section>
   );
 }
 export default Home;

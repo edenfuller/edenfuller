@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.fb97ac0c.css",
-    "main.js": "/static/js/main.f36bcac8.js",
+    "main.js": "/static/js/main.7c1f6520.js",
     "static/media/washed_clean.jpg": "/static/media/washed_clean.02ca7cdbb66512839d3a.jpg",
     "index.html": "/index.html",
     "main.fb97ac0c.css.map": "/static/css/main.fb97ac0c.css.map",
-    "main.f36bcac8.js.map": "/static/js/main.f36bcac8.js.map"
+    "main.7c1f6520.js.map": "/static/js/main.7c1f6520.js.map"
   },
   "entrypoints": [
     "static/css/main.fb97ac0c.css",
-    "static/js/main.f36bcac8.js"
+    "static/js/main.7c1f6520.js"
   ]
 }

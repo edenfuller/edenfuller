@@ -1,52 +1,48 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home.js";
 import About from "./About.js";
 import "./App.css";
 
 function App() {
   const [route, setRoute] = useState("home");
+  const subtitle = {
+    home: "portfolio",
+    about: "about",
+  };
 
   return (
     <div className="App">
       <div id="inner">
-        <Router>
-          <nav>
-            <ul>
-              <li>
-                <Link
-                  className={route === "home" ? "selected" : ""}
-                  onClick={() => {
-                    setRoute("home");
-                  }}
-                  to="/"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className={route === "about" ? "selected" : ""}
-                  onClick={() => {
-                    setRoute("about");
-                  }}
-                  to="/about"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <Switch>
-            <Route path="/about">
-              <About setRoute={setRoute} />
-            </Route>
-            <Route path="*">
-              <Home />
-            </Route>
-          </Switch>
-        </Router>
+        <nav>
+          <ul>
+            <li>
+              <button
+                className={route === "home" ? "selected" : ""}
+                onClick={() => {
+                  setRoute("home");
+                }}
+              >
+                Portfolio
+              </button>
+            </li>
+            <li>
+              <button
+                className={route === "about" ? "selected" : ""}
+                onClick={() => {
+                  setRoute("about");
+                }}
+              >
+                About
+              </button>
+            </li>
+          </ul>
+        </nav>
+        {route === "about" && <About setRoute={setRoute} />}
+        {route === "home" && <Home setRoute={setRoute} />}
+        <footer>
+          <h1>Eden Fuller</h1>
+          <h2>{subtitle[route]}</h2>
+        </footer>
       </div>
     </div>
   );

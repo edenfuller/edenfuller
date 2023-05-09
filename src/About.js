@@ -2,15 +2,13 @@ import React from "react";
 import outboundBlack from "./outbound_black.png";
 function About() {
   return (
-    <div id="About" className="layout">
-      <h1>Eden Fuller</h1>
-      <h2>about / contact</h2>
+    <section id="About" className="layout">
       <div className="about-content">
         <p>
           <strong>Eden Fuller</strong> is a front-end web engineer with 8 years
-          of experience building intuitive, reliable, and pleasing interfaces
-          for millions of users. Eden is currently the lead storefront engineer
-          at <strong>Trove</strong>. She's previously worked at{" "}
+          of experience building intuitive, reliable, and joyful interfaces for
+          millions of users. Eden is currently the lead storefront engineer at{" "}
+          <strong>Trove</strong>. She's previously worked at{" "}
           <strong>IKEA</strong>, <strong>AOL</strong>, and{" "}
           <strong>Brinkbit</strong>.
         </p>
@@ -37,7 +35,7 @@ function About() {
           </a>
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 export default About;
