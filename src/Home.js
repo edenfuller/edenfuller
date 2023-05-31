@@ -69,6 +69,17 @@ function Home() {
             the diversity of young people in engineering. Designed and developed
             interative and animated elements.`}
           </p>
+          <p>
+            <a target="_blank" href="https://dress-code.surge.sh/">
+              <span className="about-link">
+                {"dress/code "}
+                <img className="outbound-icon" src={outboundBlack} />
+              </span>
+            </a>
+            <br />
+            <strong>new! </strong>
+            {`An app I built to experiment with Data-Driven Documents (d3.js). It renders a radar chart that describes the dress code for an event via 5 traits. The chart animates as the user chooses different events from a dropdown.`}
+          </p>
         </div>
       </>
     </section>
